@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using POO_FormasGeometricas.Entities.Enums;
 
 namespace POO_FormasGeometricas.Entities
 {
@@ -8,7 +9,7 @@ namespace POO_FormasGeometricas.Entities
     {
         public double Raio { get; set; }
         
-        public Circulo(double raio,ConsoleColor cor) : base(cor)
+        public Circulo(double raio,Cor cor) : base(cor)
         {
             Raio = raio;
         }        

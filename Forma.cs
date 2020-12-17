@@ -5,13 +5,14 @@ using POO_FormasGeometricas.Entities.Enums;
 
 namespace POO_FormasGeometricas.Entities
 {
+    //Super classe abstrata
     abstract class Forma
     {
-        public Color Color { get; set; }
-        public Forma{Color color }
+        public Cor Cor { get; set; }
+        public Forma(Cor cor )
         {
-            Color=color;
+            Cor = cor;
         }
-    public abstract double Area();
+        public abstract double Area();
     }
 }

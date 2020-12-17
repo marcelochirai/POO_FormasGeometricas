@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using POO_FormasGeometricas.Entities.Enums;
 
 namespace POO_FormasGeometricas.Entities
 {
@@ -10,9 +11,10 @@ namespace POO_FormasGeometricas.Entities
         public double Altura { get; set; }
 
 
-        public Retangulo(double largura, double altura, Color cor) : base(cor)
+        public Retangulo(double largura, double altura, Cor cor) : base(cor)
         {
             Largura = largura;
+            Altura = altura;
         }
 
         public override double Area()
